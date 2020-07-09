@@ -4,15 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/cityText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Insert city name"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/currentWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/clouds" />
+
+    <TextView
+        android:id="@+id/weatherInfo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="180dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="80dp"
+        android:background="@color/lightblue"
+        android:fontFamily="@font/summer_garden"
+        android:shadowColor="@color/black"
+        android:text="Get info"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
 
 </RelativeLayout>
